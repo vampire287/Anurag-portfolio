@@ -3,13 +3,6 @@
     "development"
   ],
   "hints": {
-    "axe/name-role-value": [
-      "default",
-      {
-        "link-name": "off"
-      }
-    ],
-    "disown-opener": "off",
     "compat-api/css": [
       "default",
       {
@@ -18,10 +11,23 @@
         ]
       }
     ],
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "disown-opener": "off",
     "axe/structure": [
       "default",
       {
         "list": "off"
+      }
+    ],
+    "axe/language": [
+      "default",
+      {
+        "html-has-lang": "off"
       }
     ]
   }

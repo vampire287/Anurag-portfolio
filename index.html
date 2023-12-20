@@ -149,7 +149,10 @@
                 This android app allows to share posts,add comments,like posts
                 with your friends
               </p>
-              <a href="https://github.com/vampire287/Instagram_flutter" target="_blank">
+              <a
+                href="https://github.com/vampire287/Instagram_flutter"
+                target="_blank"
+              >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
             </div>
@@ -162,7 +165,10 @@
                 This is a app in which you can keep track of your expenses,with
                 a bar chart of showing previous week's relative expenses.
               </p>
-              <a href="https://github.com/vampire287/Expense-Tracker" target="_blank">
+              <a
+                href="https://github.com/vampire287/Expense-Tracker"
+                target="_blank"
+              >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
             </div>
@@ -175,13 +181,18 @@
                 It is a user-specific app in which you can add products to be
                 sold and can see other products that can be bought.
               </p>
-              <a href="https://github.com/vampire287/The-shop-app" target="_blank">
+              <a
+                href="https://github.com/vampire287/The-shop-app"
+                target="_blank"
+              >
                 <i class="fa-solid fa-up-right-from-square"></i>
               </a>
             </div>
           </div>
         </div>
-        <a href="https://github.com/vampire287" class="btn" target="_blank">see more</a>
+        <a href="https://github.com/vampire287" class="btn" target="_blank"
+          >see more</a
+        >
       </div>
     </div>
 
@@ -191,10 +202,11 @@
         <div class="row">
           <div class="contact-left">
             <h1 class="sub-title">Contact me</h1>
-            <p><i class="fa-solid fa-paper-plane"></i>
-            anuragkumar2872002@gmailc.com
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>
+              anuragkumar2872002@gmailc.com
             </p>
-             
+
             <p><i class="fa-solid fa-phone"></i> +91 9507816479</p>
             <div class="social-icons">
               <a href="mailto:anuragkumar2872002@gmail.com" target="_blank">
@@ -280,17 +292,16 @@
         "https://script.google.com/macros/s/AKfycbxV_cMwOhVZU3aS6MhRvNo5-J3F6ve1Rb8eNcIJFs5AC9AmYQukIJvatbn44eIGjWkTAg/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
-      const submit=document.getElementById("sbmt");
-
+      const submit = document.getElementById("sbmt");
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) =>{
-            msg.innerHTML='Message sent successfully'
-            setTimeout(function(){
-              msg.innerHTML="";
-            },3000);
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
             form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
